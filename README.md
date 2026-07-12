@@ -23,33 +23,38 @@ Clean and standardize data using PySpark
 Store cleaned data in the Silver layer using Delta Lake
 Create business-ready Gold tables
 Analyze data using SQL
-## Architecture
+## Project Architecture
+
+```text
 Generated Streaming Data (CSV)
             │
             ▼
-     Databricks Workspace
+Databricks Workspace
             │
             ▼
- Bronze Layer (Raw Data)
-            │
-     PySpark Transformations
-   - Remove duplicates
-   - Handle missing values
-   - Standardize genres
+Bronze Layer (Raw Data)
             │
             ▼
- Silver Layer (Clean Data)
-            │
-      Business Aggregations
-            │
-            ▼
- Gold Layer
- ├── Top Artists
- ├── Genre Popularity
- └── Country Streams
+PySpark Transformations
+    ├── Remove duplicates
+    ├── Handle missing values
+    └── Standardize genres
             │
             ▼
-        SQL Analysis
+Silver Layer (Clean Data)
+            │
+            ▼
+Business Aggregations
+            │
+            ▼
+Gold Layer
+    ├── Top Artists
+    ├── Genre Popularity
+    └── Country Streams
+            │
+            ▼
+SQL Analysis
+```
 ## Technology Stack
 Technology	Purpose
 Python	Generate sample streaming data
