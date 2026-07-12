@@ -133,6 +133,6 @@ Add data quality validation tests
 Deploy the pipeline on a cloud platform such as Azure or AWS
 ## Author
 
-Desh
+Deshni Stanley
 
 This project was created as part of my Data Engineering learning journey to strengthen my understanding of ETL pipelines, Databricks, PySpark, SQL, and Delta Lake while preparing for Data Engineering and Analytics roles.
