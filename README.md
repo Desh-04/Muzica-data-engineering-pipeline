@@ -64,6 +64,8 @@ Databricks	Cloud data engineering platform
 Delta Lake	Reliable storage for processed data
 Git & GitHub	Version control and project portfolio
 ## Project Structure
+
+```text
 muzica-data-engineering-pipeline/
 │
 ├── data/
@@ -86,8 +88,8 @@ muzica-data-engineering-pipeline/
 ├── images/
 │
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
+```
 ## ETL Pipeline
 Bronze Layer
 Loaded raw streaming CSV into Databricks
